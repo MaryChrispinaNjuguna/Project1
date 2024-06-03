@@ -1,4 +1,6 @@
 from django.shortcuts import render
 
-def login_view(request):
-    return render(request, 'login.html')
+def login(request):
+    return render(request, '/registration/login.html')
+def home(request):
+    return render(request, 'index.html')
